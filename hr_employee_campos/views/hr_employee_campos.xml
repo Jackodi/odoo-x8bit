@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="hr_employee_campos_form_inherit1" model="ir.ui.view">
+            <field name="name">Campos en empleado</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="passport_id" position="after">
+                    <field name="nss" />
+                </field>
+                <field name="nss" position="after">
+                    <field name="curp" />
+                </field>
+                <field name="curp" position="after">
+                    <field name="f_ingreso_laboral" />
+                </field>
+            </field>
+        </record> 
+    </data>
+</openerp>        
